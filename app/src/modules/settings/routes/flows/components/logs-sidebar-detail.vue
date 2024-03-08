@@ -43,7 +43,7 @@ watch(
 	},
 );
 
-useEventListener(window, 'visibilitychange', () => {
+useEventListener(document, 'visibilitychange', () => {
 	if (!document.hidden && page.value === 1) {
 		refresh(page.value);
 	}
